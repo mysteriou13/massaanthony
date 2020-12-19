@@ -8,8 +8,20 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
      <link href= "{{ asset("../vendor/twbs/bootstrap/dist/css/bootstrap.min.css") }}"  rel = "stylesheet">     
-   </head>
+    </head>
     <body>
+ <nav  class=" d-flex justify-content-around  navbar navbar-expand-lg navbar-dark bg-dark" >
+
+  <div class ="text-white"> acceuil </div>
+
+ <div class ="text-white"> mes projet </div>
+
+<div class ="text-white">  a propos </div>
+
+<div class ="text-white">  contact </div>
+
+
+</nav>
         {% block body %}{% endblock %}
 
 
