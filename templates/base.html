@@ -10,18 +10,30 @@
      <link href= "{{ asset("../vendor/twbs/bootstrap/dist/css/bootstrap.min.css") }}"  rel = "stylesheet">     
     </head>
     <body>
- <nav  class=" d-flex justify-content-around  navbar navbar-expand-lg navbar-dark bg-dark" >
+   
+    <nav class ="bg-dark" >
 
-  <div class ="text-white"> acceuil </div>
+<div class ="text-white">
+<h1>
+    <center> massa anthony</center>
+ </h1>
 
- <div class ="text-white"> mes projet </div>
+</div>
 
-<div class ="text-white">  a propos </div>
+ <div class = "d-flex justify-content-around  navbar navbar-expand-lg navbar-dark bg-dark">    
 
-<div class ="text-white">  contact </div>
+  <div class ="text-white"> <a href = "./index.php/index" class = "text-white"> acceuil </a> </div>
+
+ <div class ="text-white"> <a href = "./index.php/project" class = "text-white"> mes projet </a> </div>
+
+ <div class ="text-white"> <a href = "./index.php/propos" class = "text-white"> a propos </a> </div>
+
+ <div class ="text-white"> <a href = "./index.php/contact" class = "text-white"> contact </a> </div>
+
+</div>
 
 
-</nav>
+ </nav>
         {% block body %}{% endblock %}
 
 
