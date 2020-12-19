@@ -2,11 +2,19 @@
 <html>
     <head>
         <meta charset="UTF-8">
+
+       <meta name = "viewport" content = "width=device-width, initial-scale=1">
+
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
-    </head>
+     <link href= "{{ asset("../vendor/twbs/bootstrap/dist/css/bootstrap.min.css") }}"  rel = "stylesheet">     
+   </head>
     <body>
         {% block body %}{% endblock %}
+
+
         {% block javascripts %}{% endblock %}
+
+       <script src = "{{asset ("../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js") }}"></script> 
     </body>
 </html>
