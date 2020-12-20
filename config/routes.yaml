@@ -1,3 +1,9 @@
 index:
     path: /
     controller: App\Controller\controlleur::index
+index1:
+    path: /{id}
+    controller: App\Controller\controlleur::page
+
+
+
