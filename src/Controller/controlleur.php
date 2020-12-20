@@ -5,8 +5,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
  class controlleur extends AbstractController{
  
- public function index($id){
-
+ public function index($id = "index"){
    return  $this->render('./base.html');
 
 
