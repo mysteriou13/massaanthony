@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+       <meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+     <link href= "{{ asset("../vendor/twbs/bootstrap/dist/css/bootstrap.min.css") }}"  rel = "stylesheet">     
+    </head>
+    <body>
+   
+    <nav class ="bg-dark" >
+
+<div class ="text-white">
+<h1>
+    <center> massa anthony</center>
+ </h1>
+
+</div>
+
+ <div class = "d-flex justify-content-around  navbar navbar-expand-lg navbar-dark bg-dark">    
+
+  <div class ="text-white"> <a href = "{{ index }}" class = "text-white"> acceuil </a> </div>
+
+ <div class ="text-white"> <a href = "{{ project }}" class = "text-white"> mes projet </a> </div>
+
+ <div class ="text-white"> <a href = "{{ propos }}" class = "text-white"> a propos </a> </div>
+
+ <div class ="text-white"> <a href = "{{ contact }}" class = "text-white"> contact </a> </div>
+
+</div>
+
+
+ </nav>
+        {% block body %}{% endblock %}
+
+
+        {% block javascripts %}{% endblock %}
+
+       <script src = "{{asset ("../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js") }}"></script> 
+    </body>
+</html>
